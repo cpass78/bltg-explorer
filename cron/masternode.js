@@ -22,7 +22,7 @@ async function syncMasternode() {
 
   const date = moment().utc().startOf('minute').toDate();
 
-  const mns = await rpc.call('masternode', ['list']);
+  const mns = await rpc.call('listmasternodes');
   const newMasternodes = [];
   const addressesToFetch = [];
   for (const mn of mns) {
