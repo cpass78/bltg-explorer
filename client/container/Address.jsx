@@ -14,9 +14,9 @@ import HorizontalRule from '../component/HorizontalRule';
 import Pagination from '../component/Pagination';
 import Select from '../component/Select';
 import MasternodesList from '../component/MasternodesList';
-import config from './../../config'
+import config from './../../config';
 import { PAGINATION_PAGE_SIZE } from '../constants';
-import AddressTxs from './AddressTxs'
+import AddressTxs from './AddressTxs';
 import ProofOfOwnershipButton from '../component/ProofOfOwnership/ProofOfOwnershipButton'
 
 class Address extends Component {
@@ -41,18 +41,18 @@ class Address extends Component {
       isMasternode: false,
       carverAddress: null
     };
-  };
+  }
 
   componentDidMount() {
     this.getAddress();
-  };
+  }
 
   componentDidUpdate() {
     if (!!this.state.address
       && this.state.address !== this.props.match.params.hash && !this.state.loading) {
       this.getAddress();
     }
-  };
+  }
 
   getAddress = () => {
     this.setState({ loading: true }, () => {
@@ -87,7 +87,8 @@ class Address extends Component {
     return (
       <MasternodesList title="Masternode For Address" isPaginationEnabled={false} getMNs={this.props.getMNs} hideCols={["addr"]} />
     );
-  }
+  };
+
   getMasternodesAddressWidget = () => {
     const address = this.props.match.params.hash;
 
@@ -99,8 +100,7 @@ class Address extends Component {
     return (
       <MasternodesList title={masternodesAddressWidget.title} isPaginationEnabled={masternodesAddressWidget.isPaginationEnabled} getMNs={this.props.getMasternodesAddressWidget} tag={masternodesAddressWidget.tag} />
     );
-  }
-
+  };
 
   render() {
     if (!!this.state.error) {
@@ -111,7 +111,7 @@ class Address extends Component {
 
     const getUnlockAddressButton = () => {
       return <ProofOfOwnershipButton lockedTitle="Unlock Address" unlockedTitle="Address Unlocked" address={this.state.carverAddress.label} payload={this.state.carverAddress.label} />
-    }
+    };
 
     return (
       <div>
