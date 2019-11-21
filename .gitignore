@@ -65,3 +65,4 @@ config.server.js
 .DS_Store
 
 .vscode/
+.idea
