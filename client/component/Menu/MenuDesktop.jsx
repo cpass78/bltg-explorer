@@ -2,7 +2,7 @@
 import Component from 'core/Component';
 import PropTypes from 'prop-types';
 import React from 'react';
-import config from '../../../config'
+import config from '../../../config';
 
 import { Link } from 'react-router-dom';
 
@@ -29,7 +29,7 @@ export default class MenuDesktop extends Component {
 
     this.state = {
       isOpen
-    }
+    };
   }
 
   getLinks = () => {
