@@ -77,7 +77,7 @@ export default class CardStatus extends Component {
             <span className="card__label">Non-Reward Transactions:</span>
             <span className="card__result">{numeral(this.props.countCarverMovements).format('0,0')}</span>
           </div>
-          <hr class="my-1" />
+          <hr className="my-1" />
           <div className="card__row justify-content-between">
             <span className="card__label">24h MN Addresses:</span>
             <span className="card__result">{numeral(this.props.coin.uniqueMasternodeAddresses24h).format('0,0')}</span>
@@ -86,7 +86,7 @@ export default class CardStatus extends Component {
             <span className="card__label">24h Avg. MN ROI%:</span>
             <span className="card__result"><Link to="/rewards">{(this.props.coin.mnRoi24h || 0).toFixed(2)}% / year</Link></span>
           </div>
-          <hr class="my-1" />
+          <hr className="my-1" />
           <div className="card__row justify-content-between">
             <span className="card__label">24h Staking Addresses:</span>
             <span className="card__result"><Link to="/rewards">{numeral(this.props.coin.uniquePosAddresses24h).format('0,0')}</Link></span>
