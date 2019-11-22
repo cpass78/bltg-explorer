@@ -12,7 +12,6 @@ const { SocialType } = require('./features/social/data');
  */
 const config = {
   api: {
-
     host: 'http://localhost', // ex: 'https://explorer.block-logic.com' for nginx (SSL), 'http://IP_ADDRESS'
     port: '3000', // ex: Port 3000 on prod and localhost
     portWorker: '3000', // ex: Port 443 for production(ngingx) if you have SSL (we use certbot), 3000 on localhost or ip
