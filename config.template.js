@@ -21,11 +21,18 @@ const config = {
   coinDetails: {
     name: 'Block-Logic',
     shortName: 'BLTG',
-    displayDecimals: 2,
     longName: 'BLTG Cryptocurrency',
+    websiteUrl: 'https://block-logic.com/',
+    telegram: 'https://t.me/bltgx',
+    github: 'https://github.com/Block-Logic-Technology-Group',
+    discord: 'https://discord.gg/cWUSgUE',
+    twitter: 'https://twitter.com/BlockLogicTech',
+    medium: 'https://medium.com/@BlockLogic',
+    forum: 'https://forum.block-logic.com/',
+
+    displayDecimals: 2,
     coinNumberFormat: '0,0.0000',
     coinTooltipNumberFormat: '0,0.0000000000', // Hovering over a number will show a larger percision tooltip
-    websiteUrl: 'https://block-logic.com/',
     masternodeCollateral: 12000, // MN ROI% gets based on this number. If your coin has multi-tiered masternodes then set this to lowest tier (ROI% will simply be higher for bigger tiers)
   },
   offChainSignOn: {
