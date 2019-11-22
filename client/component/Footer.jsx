@@ -7,7 +7,7 @@ import moment from 'moment';
 
 import Icon from './Icon';
 
-import config from '../../config'
+import config from '../../config';
 
 /**
  * Will use material icons to render.
@@ -29,7 +29,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__block">
-          <img className="footer__logo" src="/img/footerlogo.svg" />
+          <img className="footer__logo" src="/img/bltg_x2.png" />
           <span className="footer__legal">
             <div>Copyright &copy; 2018 - {currentYear} <a href={config.coinDetails.websiteUrl} target="_blank" rel="nofollow noopener">{config.coinDetails.longName}</a></div>
 
@@ -59,22 +59,22 @@ class Footer extends Component {
           <div className="footer__social-media-wrapper">
             <div className="footer__social-title">Social Media</div>
             <div>
-              <a href="https://bitcointalk.org/index.php?topic=2499481.0" target="_blank" rel="nofollow noopener">
-                <Icon name="bitcoin" className="fab footer__social-media-icon" />
-              </a>
-              <a href="https://discord.gg/a7vhegP" target="_blank" rel="nofollow noopener">
+              {/*<a href="https://bitcointalk.org/index.php?topic=2499481.0" target="_blank" rel="nofollow noopener">*/}
+              {/*  <Icon name="bitcoin" className="fab footer__social-media-icon" />*/}
+              {/*</a>*/}
+              <a href={config.coinDetails.discord} target="_blank" rel="nofollow noopener">
                 <Icon name="discord" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://t.me/bulwarkcrypto" target="_blank" rel="nofollow noopener">
+              <a href={config.coinDetails.telegram} target="_blank" rel="nofollow noopener">
                 <Icon name="telegram" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://www.reddit.com/r/BulwarkCoin/" target="_blank" rel="nofollow noopener">
-                <Icon name="reddit" className="fab footer__social-media-icon" />
+              <a href={config.coinDetails.medium} target="_blank" rel="nofollow noopener">
+                <Icon name="medium" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://github.com/bulwark-crypto" target="_blank" rel="nofollow noopener">
+              <a href={config.coinDetails.github} target="_blank" rel="nofollow noopener">
                 <Icon name="github" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://twitter.com/BulwarkCrypto" target="_blank" rel="nofollow noopener">
+              <a href={config.coinDetails.twitter} target="_blank" rel="nofollow noopener">
                 <Icon name="twitter" className="fab footer__social-media-icon" />
               </a>
             </div>
