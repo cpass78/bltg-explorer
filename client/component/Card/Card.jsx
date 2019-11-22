@@ -19,7 +19,7 @@ export default class Card extends Component {
       return <p className={`card__title ${props.titleClassName ? props.titleClassName : ''}`}>
         {props.title}
       </p>
-    }
+    };
     return (
       <div
         className={`card ${props.className ? props.className : ''}`}

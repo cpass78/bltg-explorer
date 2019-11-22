@@ -183,6 +183,6 @@ const APIdata = [
       // },
     ]
   }
-]
+];
 
 export default APIdata;

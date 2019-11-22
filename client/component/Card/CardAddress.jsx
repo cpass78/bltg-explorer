@@ -1,14 +1,14 @@
 
 import Component from '../../core/Component';
-import config from '../../../config'
+import config from '../../../config';
 import numeral from 'numeral';
 import PropTypes from 'prop-types';
 import qrcode from 'qrcode';
 import React from 'react';
 import moment from 'moment';
-import CarverAddressLabelWidget from '../AddressWidgets/CarverAddressLabelWidget'
-import CarverAddressBadgeWidget from '../AddressWidgets/CarverAddressBadgeWidget'
-import { CarverAddressType } from '../../../lib/carver2d'
+import CarverAddressLabelWidget from '../AddressWidgets/CarverAddressLabelWidget';
+import CarverAddressBadgeWidget from '../AddressWidgets/CarverAddressBadgeWidget';
+import { CarverAddressType } from '../../../lib/carver2d';
 
 export default class CardAddress extends Component {
   static defaultProps = {
@@ -63,7 +63,7 @@ export default class CardAddress extends Component {
     const getAdressWidget = () => {
       const addressWidgets = config.addressWidgets[carverAddress.label];
       if (addressWidgets) {
-        // Each carver address can have it's own label 
+        // Each carver address can have it's own label
         const carverAddressLabelWidget = addressWidgets.carverAddressLabelWidget;
         if (carverAddressLabelWidget) {
           return carverAddressLabelWidget;

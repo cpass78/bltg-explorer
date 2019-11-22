@@ -8,6 +8,6 @@ const MenuData = [
   { label: 'Statistics', icon: '/img/statistics.svg', href: '/statistics' },
   { label: 'Coin Info', icon: '/img/coininfo.svg', href: '/coin' },
   { label: 'API', icon: '/img/api.svg', href: '/api' }
-]
+];
 
 export default MenuData;
