@@ -29,7 +29,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__block">
-          <img className="footer__logo" src="/img/bltg_x2.png" />
+          <img className="footer__logo" src="/img/footerlogo.svg" />
           <span className="footer__legal">
             <div>Copyright &copy; 2018 - {currentYear} <a href={config.coinDetails.websiteUrl} target="_blank" rel="nofollow noopener">{config.coinDetails.longName}</a></div>
 
@@ -59,9 +59,6 @@ class Footer extends Component {
           <div className="footer__social-media-wrapper">
             <div className="footer__social-title">Social Media</div>
             <div>
-              {/*<a href="https://bitcointalk.org/index.php?topic=2499481.0" target="_blank" rel="nofollow noopener">*/}
-              {/*  <Icon name="bitcoin" className="fab footer__social-media-icon" />*/}
-              {/*</a>*/}
               <a href={config.coinDetails.discord} target="_blank" rel="nofollow noopener">
                 <Icon name="discord" className="fab footer__social-media-icon" />
               </a>
