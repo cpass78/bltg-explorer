@@ -89,7 +89,7 @@ a {
         <img src="https://media.giphy.com/media/vIDsZm5DMZ5Ha/giphy.gif" title="Sad Explorer."/>
       <h1>Maintenance</h1>
       <p>Block-Logic Explorer is not available at this moment.<br/>Please check back later.</p><br/>
-  <a href="https://blcok-logic.com/" class="button">Back to Main</a>
+  <a href="https://block-logic.com/" class="button">Back to Main</a>
       </div>
   </body>
 </html>
